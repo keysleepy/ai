@@ -9,6 +9,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
@@ -868,7 +873,7 @@
         });
 
         function createTulips() {
-            const tulipCount = 12;
+            const tulipCount = 10;
             const backgroundElements = document.getElementById('backgroundElements');
             
             const zones = [
@@ -900,7 +905,7 @@
         }
 
         function createParticles() {
-            const particleCount = 25;
+            const particleCount = 12;
             const backgroundElements = document.getElementById('backgroundElements');
             
             for (let i = 0; i < particleCount; i++) {
@@ -1059,7 +1064,7 @@
 
         function createConfetti() {
             const colors = ['#FF69B4', '#FFD700', '#FF1493', '#00CED1', '#32CD32', '#FF4500'];
-            const confettiCount = 50;
+            const confettiCount = 25;
             
             for (let i = 0; i < confettiCount; i++) {
                 setTimeout(() => {
