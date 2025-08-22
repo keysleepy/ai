@@ -28,6 +28,12 @@
             will-change: transform;
         }
 
+        html, body {
+            height: 100%;
+            overflow: hidden; 
+        }
+
+
         .background-elements {
             position: fixed;
             top: 0;
@@ -47,6 +53,7 @@
             z-index: 1000;
             background: transparent;
             display: flex;
+            overflow: hidden;
             align-items: center;
             justify-content: center;
             transition: opacity 1s ease-out, transform 1s ease-out;
