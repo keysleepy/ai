@@ -16,15 +16,30 @@
             user-select: none;
             -webkit-touch-callout: none;
             -webkit-tap-highlight-color: transparent;
+            outline: none;
+            /* Optimize for mobile performance */
+            -webkit-overflow-scrolling: touch;
+            touch-action: manipulation;
+            will-change: transform;
         }
 
         body {
             font-family: 'Arial', sans-serif;
             overflow: hidden;
             cursor: pointer;
-            background: linear-gradient(135deg, #ffeef8 0%, #f8e8ff 50%, #ffe8f5 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             height: 100vh;
             position: relative;
+            /* Prevent text selection and improve touch performance */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-focus-ring-color: rgba(0,0,0,0);
+            outline: none;
             /* Optimize for mobile performance */
             -webkit-overflow-scrolling: touch;
             touch-action: manipulation;
